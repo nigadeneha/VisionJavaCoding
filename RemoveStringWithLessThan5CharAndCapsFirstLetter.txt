@@ -1,0 +1,26 @@
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Iterator;
+
+public class MyClass {
+    public static void main(String args[]) {
+      Set<String> newSet= new HashSet<String>();
+      newSet.add("gdfghhjjjj");
+      newSet.add("utrrfcv");
+      newSet.add("gdgg");
+      newSet.add("piyrvbn");
+      newSet.add("nn");
+      
+      Set<String> newSet1= new HashSet<String>();
+      
+      Iterator<String> it=newSet.iterator();
+      while(it.hasNext()){
+          String word = it.next();
+          if(word.length()>=5){
+              String caps=word.substring(0,1).toUpperCase()+ word.substring(1);
+              newSet1.add(caps);
+          }
+      }
+      System.out.println(newSet1);
+    }
+}
