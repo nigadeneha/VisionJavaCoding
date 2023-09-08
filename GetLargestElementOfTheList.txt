@@ -1,0 +1,21 @@
+/*Get the Largest Element of the list
+*/
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+      
+      List<Integer> list=Arrays.asList(50,72,13,29,100,30,76);
+      
+      int maxValue=0;
+      for(int i=0;i<list.size();i++){
+          if(list.get(i)>maxValue){
+              maxValue=list.get(i);
+          }
+      }
+      System.out.println("Max Value---->"+maxValue);
+    }
+}
