@@ -1,3 +1,10 @@
+/*Question 2: String Transformation
+Given a list of strings, write a function to:
+Remove all strings that have a length less than 5 characters.
+Capitalize the first letter of each remaining string.
+Return a new list with the modified strings.
+*/
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Iterator;

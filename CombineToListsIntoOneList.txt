@@ -1,0 +1,25 @@
+/*Write down the java program for Combining the two lists into one list
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+      List<Integer> list1 = new ArrayList<Integer>();
+      list1.add(1);
+      list1.add(3);
+      list1.add(5);
+      
+      List<Integer> list2 = new ArrayList<Integer>();
+      list1.add(9);
+      list1.add(7);
+      list1.add(0);
+      
+      List<Integer> combinedList = new ArrayList<Integer>();
+      combinedList.addAll(list1);
+      combinedList.addAll(list2);
+
+      System.out.println("CombinedList-->" + combinedList);
+    }
+}

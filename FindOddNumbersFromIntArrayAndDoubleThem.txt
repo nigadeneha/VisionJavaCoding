@@ -1,0 +1,36 @@
+/*Question 1: Filter and Transform
+Given a list of integers, write a function to:
+Filter out all even numbers.
+Double the value of each remaining odd number.
+Return a new list with the modified values.
+*/
+
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class MyClass {
+    public static void main(String args[]) {
+      ArrayList<Integer> list = new ArrayList<Integer>();
+      list.add(1);
+      list.add(8);
+      list.add(4);
+      list.add(5);
+      list.add(9);
+      list.add(2);
+      list.add(3);
+      
+      ArrayList<Integer> list2 = new ArrayList<Integer>();
+      
+      Iterator<Integer> it= list.iterator();
+      while(it.hasNext()){
+          int num=it.next();
+          if(num%2!=0){
+              int doubleNum= num*2;
+              list2.add(doubleNum);
+          }
+      }
+      System.out.println(list2);
+    }
+}
