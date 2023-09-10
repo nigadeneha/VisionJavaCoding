@@ -1,0 +1,14 @@
+import java.util.List;
+import java.util.Arrays;
+import java.util.stream.Stream;
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+      List<String> name=Arrays.asList("Neha","Go","Come","AAAA","lllll");
+      
+      System.out.println("ReverseOrderIs--->");
+      
+      name.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+    }
+}

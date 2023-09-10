@@ -1,0 +1,47 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.Comparator;
+
+public class MyClass {
+    public static void main(String args[]) {
+      List<Person> persons= new ArrayList<>();
+      persons.add(new Person("Zendya",35));
+      persons.add(new Person("Antony",40));
+      persons.add(new Person("Nanaaa",25));
+      persons.add(new Person("Bob",70));
+      
+      List<Person> result= filteredAndSortedPerson(persons);
+      
+      for(Person person: result){
+      System.out.println("Name-->"+ person.getName() + ",Age-->"+ person.getAge());
+      }
+    }
+    
+    public static List<Person> filteredAndSortedPerson(List<Person> persons){
+                
+    List<Person> filteredPersons = persons.stream().filter(person -> person.getAge()>=30).collect(Collectors.toList());
+    
+        filteredPersons.sort(Comparator.comparing(Person::getName));
+
+        return filteredPersons;
+    }
+}
+
+class Person{
+    public String name;
+    public int age;
+    
+    public Person(String name, int age){
+        this.name=name;
+        this.age=age;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getAge(){
+        return age;
+    }
+}

@@ -5,20 +5,17 @@ Capitalize the first letter of each remaining string.
 Return a new list with the modified strings.
 */
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class MyClass {
     public static void main(String args[]) {
-      Set<String> newSet= new HashSet<String>();
-      newSet.add("gdfghhjjjj");
-      newSet.add("utrrfcv");
-      newSet.add("gdgg");
-      newSet.add("piyrvbn");
-      newSet.add("nn");
+      List<String> newSet= Arrays.asList("gdfghhjjjj","gdgg","kkkkkkkk","aa","hsjsag");
       
-      Set<String> newSet1= new HashSet<String>();
+      List<String> newSet1= new ArrayList<String>();
       
       Iterator<String> it=newSet.iterator();
       while(it.hasNext()){
